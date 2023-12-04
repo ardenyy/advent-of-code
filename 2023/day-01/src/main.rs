@@ -64,12 +64,7 @@ fn part_two() -> i32 {
     let mut last = '0';
     let mut total = 0;
 
-    let mut log: String = "".to_string();
-
     for line in input.split("\n") {
-        if line.contains("123456") {
-            break;
-        }
         let mut left_index = 0;
         for i in 1..line.len()  {
             let sub_str = &line[left_index..i];
